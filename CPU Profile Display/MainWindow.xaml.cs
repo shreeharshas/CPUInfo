@@ -20,9 +20,15 @@ namespace CPU_Profile_Display
     /// </summary>
     public partial class MainWindow : Window
     {
+        private CPUReader cpuReader = new CPUReader();
         public MainWindow()
         {
             InitializeComponent();
+            UpdateUI();
+        }
+
+        private void UpdateUI() {
+            lblOutput.Content = cpuReader.GetCPUInfo(CPUProps.CurrentClockSpeed);
         }
     }
 }

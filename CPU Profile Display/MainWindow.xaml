@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CPU_Profile_Display"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="311.932" Width="542.614">
+    <Grid Margin="0,0,2,4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="255*"/>
+            <ColumnDefinition Width="199*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="CPU Speed" HorizontalAlignment="Left" Margin="102,79,0,0" VerticalAlignment="Top" Width="154" Height="41" Grid.ColumnSpan="2" RenderTransformOrigin="1.038,-0.922"/>
+        <Label Name="lblOutput" Content="Label" HorizontalAlignment="Left" Margin="102,167,0,0" VerticalAlignment="Top" Width="76"/>
+
     </Grid>
 </Window>
